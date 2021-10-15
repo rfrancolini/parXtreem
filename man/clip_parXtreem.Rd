@@ -4,14 +4,12 @@
 \alias{clip_parXtreem}
 \title{clip parXtreem table by date}
 \usage{
-clip_parXtreem(x, deploy = NA, recover = NA)
+clip_parXtreem(x, startstop = NA)
 }
 \arguments{
 \item{x}{tibble, parXtreem}
 
-\item{deploy}{POSIXt or NA, if not NA, clip data before this time}
-
-\item{recover}{POSIXt or NA, if not NA, clip data before this time}
+\item{startstop}{POSIXt vector of two values or NA, only used if clip = "user"}
 }
 \value{
 tibble

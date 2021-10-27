@@ -8,7 +8,8 @@ draw_plot(
   x = read_parXtreem(),
   main = "PAR",
   xlabel = "Date",
-  ylabel = "PAR (umols / m squared / second)"
+  ylabel = "PAR (umols / m squared / second)",
+  ...
 )
 }
 \arguments{
@@ -19,6 +20,8 @@ draw_plot(
 \item{xlabel}{character, title of xaxis}
 
 \item{ylabel}{character, title of yaxis}
+
+\item{...}{further arguments passed to \code{\link[ggplot2]{theme}}}
 }
 \value{
 ggplot2 object

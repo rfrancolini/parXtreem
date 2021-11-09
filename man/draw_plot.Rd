@@ -9,6 +9,7 @@ draw_plot(
   main = "PAR",
   xlabel = "Date",
   ylabel = "PAR (umols / m squared / second)",
+  facet = NULL,
   ...
 )
 }
@@ -20,6 +21,8 @@ draw_plot(
 \item{xlabel}{character, title of xaxis}
 
 \item{ylabel}{character, title of yaxis}
+
+\item{facet}{character, name of the column to facet upon (like "Site") or NULL to skip}
 
 \item{...}{further arguments passed to \code{\link[ggplot2]{theme}}}
 }
